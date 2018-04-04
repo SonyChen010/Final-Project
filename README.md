@@ -27,7 +27,7 @@ const uint8_t volume = 5;
 
 
 void setup() {
-Serial.begin(9600); // Starts the serial communication
+Serial.begin(9600); 
 sd.begin(SD_SEL, SPI_HALF_SPEED);
 MP3player.begin();
 }
@@ -174,7 +174,7 @@ void setup()
   background(225);
   stroke(160);
   fill(50);
-  String portName = Serial.list()[2]; //change the 0 to a 1 or 2 etc. to match your port
+  String portName = Serial.list()[2]; 
   myPort = new Serial(this, portName, 9600);
 }
 
